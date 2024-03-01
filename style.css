@@ -1,0 +1,223 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing : border-box;
+}
+
+:root{
+    --primary-color : #ff7613;
+    --text-color : #727172;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: Inter, sans-serif;
+    background-color: black;
+    color : white;
+}
+
+img{
+    width : 100%;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.description{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background-color: #070707;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+@media only screen and(max-width: 776px) {
+    .container{
+        width: 100px;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+
+.profile{
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+
+.profile_container{
+    display: flex;
+    gap: 2rem;
+
+}
+.profile_img{
+    max-width: 250px;
+}
+
+.profile_name{
+    color: white;
+    font-size: 200;
+    font-size: clamp(2rem, 8vw, 4rem);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -0.8rem;
+}
+
+.profile_title{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+
+.title{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.item_title{
+
+    color: white;
+    margin: 0.8rem 0;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+.item_pretitle{
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-transform:none;
+}
+
+.item_subtitle{
+    color: var(--text-color);
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-transform: none;
+}
+
+.download_btn{
+    display: block;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.download_btn:hover{
+    color: var(--primary-color);
+}
+
+@media only screen and(max-width:768px){
+    .profile_container{
+        flex-direction: column;
+    }
+}
+
+.skill_list{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
+
+.group-1, .group-2{
+    display: flex;
+    gap : 2rem;
+    flex-direction: column;
+}
+
+.group-3{
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    grid-column:1/-1 ;
+    display: flex;
+    flex-direction: column;    
+}
+
+.ref_item{
+    margin-top: 2rem;
+
+}
+
+.ref_name{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.edu_item{
+    margin-top: 2rem;
+
+}
+
+.certification{
+    margin-top: 2rem;
+}
+
+.project{
+    margin-top:2rem ;
+}
+
+.awards{
+    margin-top: 2rem;
+}
+
+.interest_items{
+    font-size:2rem ;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.interest_item{
+    font-size:1.5rem ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+}
+
+.interest_item svg{
+    width: 2rem;
+}
+
+.social_item{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    gap: -5rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+
+}
+
+.social_item:hover{
+    color: var(--primary-color);
+}
